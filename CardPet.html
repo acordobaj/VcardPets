@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>vCard para Mascotas</title>
+  
+  <!-- Enlace a Bootstrap desde la CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-image: url('assets/images/Fondo.jpg'); /* Fondo de la imagen */
+      background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+      background-position: center; /* Centra la imagen */
+      color: #4e342e; /* Texto marrón oscuro */
+    }
+    .pet-card {
+      max-width: 400px;
+      margin: 20px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .pet-photo {
+      background-color: #ff6f61; /* Fondo coral suave para la foto */
+      text-align: center;
+      padding: 20px;
+    }
+    .pet-photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .pet-details {
+      background-color: #f5f5dc; /* Fondo beige claro para los detalles */
+      padding: 15px;
+      color: #4e342e; /* Texto marrón oscuro para los detalles */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="pet-card">
+    <!-- Sección de la foto de la mascota -->
+    <div class="pet-photo">
+      <img src="assets/images/golden.jpeg" alt="Foto de la Mascota">
+    </div>
+    <!-- Sección de los detalles de la mascota -->
+    <div class="pet-details text-center"> <!-- Clases para centrar el texto -->
+      <h5>Nombre: <span id="pet-name">Firulais</span></h5>
+      <p>Dirección: <span id="owner-address">123 Calle Principal, Ciudad</span></p>
+      <p>Teléfono: <span id="owner-phone">+123 456 7890</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- Enlaces a scripts de Bootstrap desde la CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
